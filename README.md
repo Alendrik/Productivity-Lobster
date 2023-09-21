@@ -6,6 +6,7 @@
 - Figuring out Dimscord
 - Figuring out functionality
 
+
 ## Command examples
 > /add "topic" "category"
 > /rm
@@ -32,4 +33,9 @@
 This project was built with nimble, but the dependencies are being handled by atlas. If you want to work on this, you need to create an atlas workspace (outside project dir) then add dimscord as a dependency.
 
 Token is being stored as an env var. There are better ways to store this within secrets and such.
+
+## Compilation
+```bash 
+$ nim c -r -d:ssl -d:dimscordDebug -d:discordcompress -d:discordv8 ProductivityLobster.nim
+```
 
