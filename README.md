@@ -2,6 +2,10 @@
 - Sometimes, people organize, brainstorm, and work on ideas in discord servers. 
 - Why not create a bot that helps manage those ideas and keep track of items?
 
+## Current State
+- Figuring out Dimscord
+- Figuring out functionality
+
 ## Command examples
 > /add "topic" "category"
 > /rm
@@ -21,5 +25,11 @@
 	- Create DMZ to segment things away from it. Only use IPv6.
 	- Set secret to an environment variable, DO NOT hardcode.
 
-## Other Flavors
+## Other Idea Flavors
 - Can be linked to GH repos/package directories (nim server bot)
+
+## Contributing/Dependency Information
+This project was built with nimble, but the dependencies are being handled by atlas. If you want to work on this, you need to create an atlas workspace (outside project dir) then add dimscord as a dependency.
+
+Token is being stored as an env var. There are better ways to store this within secrets and such.
+
